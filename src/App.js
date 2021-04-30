@@ -3,12 +3,12 @@ import Parent from './Parent'
 import React, {useState} from 'react'
 
 function App() {
-  let [number,setNUmber]=useState(45)
+  let [number,setNumber]=useState(45)
   return (
     <div>
       Hello world from APP.JS
-      <Parent num={number}/>
-      <button onClick={()=>setNUmber(++number)}>Update</button>
+      <Parent num={number} setNumber={setNumber}/>
+      <button onClick={()=>setNumber(++number)}>Update from App..</button>
     </div>
   );
 }
